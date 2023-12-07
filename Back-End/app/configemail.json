@@ -1,0 +1,17 @@
+{
+  "fromEmailAddress": "shashi@electems.com",
+  "activationEmailSubject": "Your Rack Management Account Activation Link",
+  "quantityAlert": "QuantityAlert",
+  "trailend": "Trail package expire",
+  "registrationEmailSubject": "Registration",
+  "staffregistrationEmailSubject": "Staff-Registration",
+  "subjectofPasswordEmail": "Your Rack Management New Password",
+  "EmailSystemUrl": "http://localhost:3000",
+  "adminSystemUrl": "./resources/adminJsonFolder/",
+  "timeinterval": "30 day",
+  "notificationduration": 7,
+  "noOFRetry": 3,
+  "companyEmail": "druthvik@electems.com",
+  "enquirySubject": "Rack Management - Customer Enquiry",
+  "ticketSubject": "Rack Management - Customer Raised a Ticket"
+}
