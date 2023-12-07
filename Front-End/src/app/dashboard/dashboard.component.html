@@ -1,0 +1,68 @@
+<!-- <div class="container-fluid">
+  <input class="form-control me-2" type="search" [(ngModel)]="search" placeholder="Search" aria-label="Search" />
+  <button class="btn btn-outline-success mr-1"
+    (click)="getAllStoresandSearch(search,userId,UserObj.clientFk,schemaName)" data-bs-toggle="tooltip"
+    data-bs-placement="top" title="Search Tray for Items">
+    <i class="icon-color fa fa-bars fa-lg"></i>
+  </button>
+</div> -->
+
+<!-- <div *ngIf="isQuantity" class="mat-app-background basic-container">
+  <mat-table #table [dataSource]="newStoredataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="storeName">
+      <mat-header-cell *matHeaderCellDef class="text-bold">
+        StoreName
+      </mat-header-cell>
+      <mat-cell *matCellDef="let element" class="element-text">
+        {{ element.storeName }}
+      </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+  </mat-table>
+</div> -->
+
+<!-- <table>
+  <thead>
+    <th>Groups Name</th>
+    <th>Groups Items</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let group of storeNames">
+      <td>{{group.storeName}}</td>
+    </tr>
+  </tbody>
+</table> -->
+
+<!-- <div class="container"> -->
+  <!-- <div class="form-group">
+    <label>Enter address</label>
+    <input type="text" class="form-control" (keydown.enter)="$event.preventDefault()" placeholder="Search Product"
+      autocorrect="off" autocapitalize="off" spellcheck="off" type="text" />
+  </div> -->
+
+  <!-- <agm-map [latitude]="latitude" [longitude]="longitude">
+    <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true" (dragEnd)="markerDragEnd($event)"
+      (markerClick)="selectMarker($event)"></agm-marker>
+  </agm-map> -->
+
+  <!-- <div *ngIf="showAllStores">
+    <agm-map #gm [latitude]="latitude" [longitude]="longitude" (mapClick)="mapClicked($event)">
+      <agm-marker class="mapMarker" *ngFor="let device of this.clientStores ;" [latitude]="device.latitude"
+        [longitude]="device.longitude">
+      </agm-marker>
+    </agm-map>
+  </div> -->
+  <!-- <div *ngIf="showSearchedStore">
+    <agm-map #gm [latitude]="latitude" [longitude]="longitude">
+      <agm-marker class="mapMarker" *ngFor="let device of this.storeNames ;" [latitude]="device.latitude"
+        [longitude]="device.longitude">
+      </agm-marker>
+    </agm-map>
+  </div> -->
+
+  <h5>Address: {{ address }}</h5>
+  <div>Latitude: {{ latitude }}</div>
+  <div>Longitude: {{ longitude }}</div>
+<!-- </div> -->

@@ -1,0 +1,17 @@
+agm-map {
+    height: 300px;
+}
+
+.text-bold {
+    font-size: 14px;
+    color: #778D9B;
+}
+
+.element-text {
+    color: #778D9B;
+}
+
+#map {
+    width: 100%;
+    height: 480px;
+}

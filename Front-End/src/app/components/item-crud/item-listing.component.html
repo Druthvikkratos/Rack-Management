@@ -1,0 +1,44 @@
+<div *ngIf="!menuService.isTrayMenu">
+  <div class="page-title">
+    <h2>Add from {{ this.dropdownBtnText }} to {{tray}}</h2>
+  </div>
+  <div class="container-fluid mt-10">
+    <div class="row">
+      <div class="">
+        <a class="dropdown-toggle" type="button" id="product-dropdownMenu" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          {{ dropDown ? '' : 'Select Product Of Tray' }}
+          {{ this.dropdownBtnText }}
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu" id="selectProduct">
+          <div class="nav-item" *ngFor="let template of templateList">
+            <button class="btn btn-primaryy rounded-pill px-3 mb-2 mb-lg-0"
+              (click)="fetchFormList(template.name, template.id)" (click)="select(template.name)">
+              <div class="d-flex align-items-center" id="selectTemplates">
+                <div>{{ template.name }}</div>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div id="switch_button" class="pull-right">
+          <button *ngIf="showTraybutton" class="btn btn-sm btn-primary" id="Switch To Tray View" data-toggle="tooltip" data-placement="bottom"
+            title="Click to select existing products" (click)="retriveItems()">
+            {{
+            switchButtonProductAndTray
+            ? 'Switch To Tray View'
+            : 'Switch To Product View'
+            }}
+          </button>
+        </div>
+      </div>
+      <div class="w-100 d-none d-md-block"></div>
+    </div>
+  </div>
+
+  <div *ngFor="let template of templateList">
+    <div *ngIf="template.name === name && formList">
+      <app-formlist-quantity #child name="{{ template.name }}" id="{{ template.id }}" isQuantity="{{ isQuantity }}"
+        trayId="{{ trayId }}" rackId="{{ rackId }}" rackName="{{ rackName }}"></app-formlist-quantity>
+    </div>
+  </div>
+</div>
